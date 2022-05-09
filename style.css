@@ -1,0 +1,1453 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  background: #000;
+}
+/* Header */
+.headercontainer {
+  background-image: url(img/NRcrni.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navcontainer {
+  width: 80%;
+  height: 80px;
+  background-color: transparent;
+  margin: 3% 0 0 10%;
+  position: fixed;
+  display: flex;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+/* burger kontainer */
+
+.brger li {
+  opacity: 0;
+  display: none;
+  right: 0px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: whitesmoke;
+  margin: 5px;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: whitesmoke;
+}
+/*  */
+
+.navlogo {
+  flex: 1;
+  background-color: black;
+  background-image: url("img/rsz_smalldzoni.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.navmenu {
+  flex: 2;
+  background: rgb(0, 0, 0);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,34,34,1) 44%, rgba(147,147,147,1) 100%); */
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.nav {
+  height: 80px;
+  width: 600px;
+  background: transparent;
+  border-radius: 8px;
+  position: absolute;
+  left: 40%;
+  z-index: 100;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 1.2s;
+  text-align: center;
+  line-height: 80px;
+  z-index: 100;
+  display: inline-flex;
+  position: relative;
+}
+
+.navmenu a:hover {
+  color: black;
+  transition: 1.2s;
+}
+.navmenu .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: #f2aa4cff;
+  border-radius: 8px;
+  transition: all 0.5s ease 0s;
+  text-align: center;
+}
+.nav a:nth-child(1) {
+  width: 120px;
+}
+
+.navmenu .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 110px;
+  left: 0;
+}
+
+.nav a:nth-child(2) {
+  width: 160px;
+}
+
+.navmenu .start-about,
+a:nth-child(2):hover ~ .animation {
+  width: 170px;
+  left: 110px;
+  background: #dd4b39;
+}
+
+.nav a:nth-child(3) {
+  width: 120px;
+}
+
+.navmenu .start-galery,
+a:nth-child(3):hover ~ .animation {
+  width: 120px;
+  left: 290px;
+  background: #3b5998;
+}
+
+.nav a:nth-child(4) {
+  width: 160px;
+}
+
+.navmenu .start-contact,
+a:nth-child(4):hover ~ .animation {
+  width: 200px;
+  left: 410px;
+  background: #55acee;
+}
+
+/* So me */
+.nikolica {
+  font-family: "Permanent Marker", cursive;
+  width: 60%;
+  height: 100px;
+  bottom: 0;
+  letter-spacing: 1px;
+  margin: 5% 20%;
+  text-align: justify;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+}
+
+.stars {
+  width: 100%;
+  height: 200px;
+  background-image: url("img/stars.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* About me */
+
+.aboutContainer {
+  background: #000;
+  width: 80%;
+  height: 1050px;
+  margin: auto;
+  z-index: 1;
+}
+
+.familyContainer {
+  width: 70%;
+  height: 860px;
+  background: #000;
+  position: absolute;
+  margin-top: 30px;
+  left: 50%;
+  margin-left: -35%;
+}
+
+/* Dad container */
+
+.dadContainer {
+  width: 900px;
+  height: 470px;
+  margin: 10px auto;
+  position: relative;
+  display: flex;
+}
+
+.profilna {
+  background-image: url("img/naslovna1.JPG");
+  height: 400px;
+  width: 260px;
+  background-size: cover;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.maglaprofilna {
+  height: 400px;
+  width: 260px;
+  background: #dd4b39;
+  z-index: 1;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 8px;
+}
+
+.txtp {
+  position: absolute;
+  height: 400px;
+  width: 600px;
+  right: 0;
+  text-align: justify;
+  padding: 50px 20px 0 20px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+.txtp p:first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+}
+
+/* Mom Container */
+.momContainer {
+  width: 900px;
+  height: 420px;
+  margin: auto;
+  position: relative;
+}
+
+.momimg {
+  width: 500px;
+  height: 400px;
+  background-image: url("img/nikolaCoverPhoto.jpg");
+  background-size: cover;
+  position: absolute;
+  margin-right: 10px;
+  right: 0;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.mommagla {
+  width: 500px;
+  height: 400px;
+  background: #dd4b39;
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+  right: 0;
+  border-radius: 8px;
+}
+
+.momtxtp {
+  width: 380px;
+  height: 400px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  text-align: justify;
+  letter-spacing: 1px;
+  padding: 50px 0 0 5px;
+  color: #ffffff;
+}
+.momtxtp p:first-letter {
+  float: left;
+  font-size: 45px;
+  line-height: 1;
+  font-weight: bold;
+  margin-right: 9px;
+}
+
+/* Fora */
+
+.wadiv {
+  width: 100%;
+  height: 160px;
+  background-image: url("img/tension.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Gallery */
+
+.galleryContainerfamilly {
+  width: 80%;
+  height: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.gallerycontainer {
+  display: block;
+  width: 900px;
+  height: 1050px;
+  margin: auto;
+  padding-top: 0px;
+  margin-top: 30px;
+  z-index: 3;
+  box-shadow: 10px 10px #3b5998;
+  border-radius: 8px;
+}
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* mora biti bas lepo odredjeno */
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 300;
+  color: transparent;
+  text-decoration: none;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 300;
+  color: lightseagreen;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/* medjudiv */
+
+.famillyimg {
+  width: 100%;
+  height: 310px;
+  background-image: url("img/famillyworked.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Contact me*/
+
+.contactfamilly {
+  width: 80%;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.contactfamillydiv {
+  width: 900px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.contactfamillyinput {
+  flex: 1;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+}
+
+.contactfamillymsg {
+  flex: 2;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  align-content: space-around;
+  margin-top: 40px;
+}
+
+.txtArea {
+  margin: 20px 10px 0 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 10px 10px #55acee;
+}
+
+.name input {
+  height: 40px;
+  width: 200px;
+  margin: 20px 50px 9px 50px;
+}
+
+.email input {
+  height: 40px;
+  width: 200px;
+  margin: 5px 50px 9px 50px;
+}
+
+.subject input {
+  height: 40px;
+  width: 200px;
+  margin: 5px 50px 9px 50px;
+}
+
+input {
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14pt;
+  box-shadow: 5px 5px #55acee;
+}
+
+.dugmence {
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dugmence button {
+  line-height: 50px;
+  padding: 0px 25px 0px 25px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  font-size: 18pt;
+  transition: 1.2s;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px #55acee;
+}
+
+.dugmence button:hover {
+  background: #000;
+  color: white;
+  transition: 1.2s;
+}
+
+/* Footer */
+.mainfooter {
+  width: 100%;
+  height: 190px;
+  background: rgb(48, 48, 48);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 48, 48, 1) 0%,
+    rgba(23, 23, 23, 1) 6%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  margin: auto;
+  display: flex;
+  color: #ffffff;
+}
+
+.mainfooter1 {
+  flex: 1;
+  background-color: transparent;
+  justify-content: center;
+}
+.mainfooter1 p {
+  margin: 20px;
+}
+
+.mainfooter2 {
+  flex: 1;
+  background-color: transparent;
+}
+.mainfooter2 p {
+  margin: 20px;
+}
+
+.mainfooter3 {
+  flex: 1;
+  background-color: transparent;
+}
+.mainfooter3 p {
+  margin: 20px;
+}
+
+.icon-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 200;
+}
+
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* .icon-bar a:hover {
+    background-color: #000;
+  } */
+.facebook,
+.twitter,
+.youtube,
+.google,
+.linkedin {
+  border-radius: 8px;
+}
+
+.facebook {
+  background: #000;
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+  transition: all 1.8s ease;
+}
+
+.twitter {
+  background: #000;
+  color: white;
+}
+
+.twitter:hover {
+  background: #55acee;
+  transition: all 1.8s ease;
+}
+
+.google {
+  background: #000;
+  color: white;
+}
+
+.google:hover {
+  background: #dd4b39;
+  transition: all 1.8s ease;
+}
+
+.linkedin {
+  background: #000;
+  color: white;
+}
+
+.linkedin:hover {
+  background: #007bb5;
+  transition: all 1.8s ease;
+}
+
+.youtube {
+  background: #000;
+  color: white;
+}
+
+.youtube:hover {
+  background: #bb0000;
+  transition: all 1.8s ease;
+}
+
+.smallNikola {
+  background-image: url("img/rsz_smalldzoni.png");
+  height: 50px;
+  width: 250px;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainfooter1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mainfooter2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mainfooter3 {
+  margin: auto;
+}
+
+.raketa {
+  width: 100%;
+  height: 520px;
+  background-image: url("img/vasionica.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+    padding: 20px;
+    position: fixed;
+    z-index: 300;
+  }
+  .navmenu {
+    display: none;
+  }
+  .brger li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 95vh;
+    top: 5vh;
+    background-color: #202020f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 300;
+    border-radius: 7px;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links a {
+    transition: 1s ease-in-out;
+  }
+
+  .nav-links a:hover {
+    color: #f2aa4cff;
+    transition: 1s ease-in-out;
+    border-bottom: 1px solid #f2aa4cff;
+  }
+
+  .icon-bar a {
+    display: block;
+  }
+
+  /* galery */
+
+  .gallerycontainer {
+    width: 90%;
+  }
+
+  .txtp {
+    width: 70%;
+    padding-right: 20%;
+  }
+
+  /* about me */
+  .aboutContainer {
+    height: 900px;
+  }
+  .profilna {
+    height: 300px;
+    width: 260px;
+  }
+
+  .maglaprofilna {
+    height: 300px;
+    width: 260px;
+    background: #dd4b39;
+  }
+
+  .momimg {
+    width: 350px;
+    height: 250px;
+    margin-right: 13%;
+  }
+
+  .mommagla {
+    width: 350px;
+    height: 250px;
+    margin-right: 14%;
+  }
+
+  .momtxtp {
+    width: 400px;
+    height: 100px;
+  }
+
+  .txtArea {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutContainer {
+    height: 950px;
+  }
+  .profilna {
+    height: 300px;
+    width: 260px;
+  }
+
+  .gallerycontainer {
+    width: 100%;
+  }
+
+  .aboutContainer {
+    width: 100%;
+  }
+
+  .dadContainer {
+    width: 100%;
+  }
+
+  .momContainer {
+    width: 100%;
+  }
+
+  .gallerycontainer {
+    width: 100%;
+  }
+
+  .contactfamillydiv {
+    width: 100%;
+  }
+
+  .maglaprofilna {
+    height: 300px;
+    width: 260px;
+    background: #dd4b39;
+  }
+
+  .txtp {
+    width: 65%;
+    margin-right: -40px;
+    padding-right: 0px;
+  }
+
+  .momimg {
+    width: 350px;
+    height: 250px;
+    margin-right: -75px;
+  }
+
+  .mommagla {
+    width: 350px;
+    height: 250px;
+    margin-right: -65px;
+  }
+
+  .momtxtp {
+    width: 330px;
+    height: 90px;
+    padding: 0;
+  }
+  .name input {
+    height: 35px;
+    width: 180px;
+    font-size: 10pt;
+  }
+
+  .email input {
+    height: 35px;
+    width: 180px;
+    font-size: 10pt;
+  }
+
+  .subject input {
+    height: 35px;
+    width: 180px;
+    font-size: 10pt;
+  }
+
+  .txtArea {
+    width: 380px;
+    height: 140px;
+  }
+
+  .dugmence a {
+    font-size: 13pt;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .profilna {
+    height: 250px;
+    width: 200px;
+  }
+
+  .maglaprofilna {
+    height: 250px;
+    width: 200px;
+  }
+
+  .txtp {
+    font-size: 9pt;
+    padding-right: 0px;
+  }
+
+  .momContainer {
+    width: 100%;
+  }
+  .momimg {
+    width: 250px;
+    height: 150px;
+    margin-right: 0px;
+  }
+
+  .mommagla {
+    width: 250px;
+    height: 150px;
+    margin-right: -10px;
+  }
+
+  .momtxtp {
+    font-size: 9pt;
+    width: 300px;
+  }
+  .contactfamillydiv {
+    width: 100%;
+  }
+  .gallerycontainer {
+    width: 100%;
+  }
+
+  .txtArea {
+    width: 300px;
+    height: 140px;
+  }
+
+  .dadContainer {
+    height: 300px;
+    width: 100%;
+  }
+  .familyContainer {
+    height: 540px;
+  }
+  .aboutContainer {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profilna {
+    height: 250px;
+    width: 200px;
+  }
+
+  .maglaprofilna {
+    height: 250px;
+    width: 200px;
+  }
+
+  .txtp {
+    font-size: 9pt;
+    padding-right: 0px;
+  }
+
+  .momContainer {
+    width: 100%;
+  }
+  .momimg {
+    width: 250px;
+    height: 150px;
+    margin-right: 0px;
+  }
+
+  .mommagla {
+    width: 250px;
+    height: 150px;
+    margin-right: -10px;
+  }
+
+  .momtxtp {
+    font-size: 9pt;
+    width: 300px;
+  }
+  .contactfamillydiv {
+    width: 100%;
+  }
+  .gallerycontainer {
+    width: 100%;
+  }
+
+  .txtArea {
+    width: 300px;
+    height: 140px;
+  }
+
+  .dadContainer {
+    height: 300px;
+    width: 100%;
+  }
+  .familyContainer {
+    height: 540px;
+  }
+  .aboutContainer {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .navmenu {
+    display: none;
+  }
+  .brger li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 95vh;
+    top: 5vh;
+    background-color: #202020f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 300;
+    border-radius: 7px;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .momimg {
+    margin-right: -75px;
+  }
+  .mommagla {
+    margin-right: -65px;
+  }
+  .nav-links a:hover {
+    color: #f2aa4cff;
+    transition: 1s ease-in-out;
+    border-bottom: 1px solid #f2aa4cff;
+  }
+
+  .burger {
+    display: block;
+    padding: 20px;
+    position: fixed;
+    z-index: 300;
+  }
+
+  .portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  /* Gallery */
+  .gallerycontainer {
+    width: 80%;
+    height: 100%;
+  }
+
+  .galleryContainerfamilly {
+    height: 100%;
+  }
+
+  /* Contact me */
+
+  .contactfamilly {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contactfamillydiv {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .txtArea {
+    width: 220px;
+  }
+
+  .txtp {
+    width: 60%;
+    padding-top: 30px;
+  }
+
+  .momtxtp {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mainfooter1 {
+    font-size: 11pt;
+  }
+  .mainfooter2 {
+    font-size: 11pt;
+  }
+  .mainfooter3 {
+    font-size: 11pt;
+  }
+
+  .mainfooter {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainfooter3 {
+    display: none;
+  }
+
+  .txtArea {
+    width: 160px;
+  }
+
+  .contactfamillyinput {
+    width: 50%;
+  }
+
+  .familyContainer {
+    margin-left: 0;
+    left: 4%;
+  }
+
+  .txtp {
+    right: -30px;
+    top: -30px;
+  }
+
+  .momimg {
+    margin-right: -95px;
+  }
+
+  .mommagla {
+    margin-right: -85px;
+  }
+
+  .momtxtp {
+    width: 170px;
+  }
+
+  .aboutContainer {
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .smallNikola {
+    width: 100%;
+  }
+  .mainfooter p {
+    font-size: 9pt;
+  }
+
+  .name input {
+    width: 70%;
+  }
+  .subject input {
+    width: 70%;
+  }
+
+  .email input {
+    width: 70%;
+  }
+
+  .contactfamillyinput {
+    width: 42%;
+    flex: 2;
+  }
+
+  .profilna {
+    height: 200px;
+    width: 130px;
+  }
+
+  .maglaprofilna {
+    height: 200px;
+    width: 140px;
+  }
+
+  .txtp {
+    right: -10px;
+    width: 70%;
+    text-align: left;
+  }
+
+  .momtxtp {
+    width: 280px;
+    top: 180px;
+    left: 4%;
+  }
+
+  .momimg {
+    margin-right: 0px;
+  }
+  .mommagla {
+    margin-right: -10px;
+  }
+  .aboutContainer {
+    height: 720px;
+  }
+
+  .nikolica {
+    height: 150px;
+  }
+
+  .dugmence {
+    margin-left: 44px;
+  }
+  .txtArea {
+    width: 120px;
+  }
+
+  .img-text-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .smallNikola {
+    width: 100%;
+  }
+  .mainfooter p {
+    font-size: 9pt;
+  }
+
+  .name input {
+    width: 70%;
+  }
+  .subject input {
+    width: 70%;
+  }
+
+  .email input {
+    width: 70%;
+  }
+
+  .contactfamillyinput {
+    width: 42%;
+    flex: 2;
+  }
+
+  .profilna {
+    height: 200px;
+    width: 130px;
+  }
+
+  .maglaprofilna {
+    height: 200px;
+    width: 140px;
+  }
+
+  .txtp {
+    right: -8px;
+    width: 68%;
+    text-align: left;
+  }
+
+  .momtxtp {
+    width: 280px;
+    top: 180px;
+    left: 4%;
+  }
+
+  .momimg {
+    margin-right: 0px;
+  }
+  .mommagla {
+    margin-right: -10px;
+  }
+  .aboutContainer {
+    height: 720px;
+  }
+
+  .nikolica {
+    height: 150px;
+  }
+
+  .dugmence {
+    margin-left: 44px;
+  }
+  .txtArea {
+    width: 106px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .contactfamillydiv {
+    height: 300px;
+  }
+  .dugmence {
+    margin-left: 44px;
+  }
+  .txtArea {
+    width: 106px;
+  }
+  .aboutContainer {
+    height: 725px;
+  }
+
+  .momtxtp {
+    width: 253px;
+    top: 183px;
+    left: 11%;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .dadContainer {
+    height: 350px;
+  }
+
+  .momtxtp {
+    width: 260px;
+    left: 5%;
+    top: 187px;
+  }
+
+  .aboutContainer {
+    height: 740px;
+  }
+
+  .dugmence {
+    margin-left: 43px;
+  }
+
+  .txtArea {
+    width: 99px;
+  }
+  .contactfamillydiv {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .dadContainer {
+    height: 350px;
+  }
+
+  .momtxtp {
+    width: 260px;
+    left: 5%;
+    top: 187px;
+  }
+
+  .aboutContainer {
+    height: 790px;
+  }
+
+  .dugmence {
+    margin-left: 43px;
+  }
+
+  .txtArea {
+    width: 99px;
+  }
+  .contactfamillydiv {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .dadContainer {
+    height: 350px;
+  }
+
+  .momtxtp {
+    width: 260px;
+    left: 5%;
+    top: 187px;
+  }
+
+  .aboutContainer {
+    height: 790px;
+  }
+
+  .dugmence {
+    margin-left: 43px;
+  }
+
+  .txtArea {
+    width: 99px;
+  }
+  .contactfamillydiv {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .dadContainer {
+    height: 380px;
+  }
+
+  .txtp {
+    right: 10px;
+    width: 59%;
+  }
+
+  .aboutContainer {
+    height: 800px;
+  }
+
+  .momtxtp {
+    width: 266px;
+    top: 191px;
+    left: 3%;
+  }
+
+  .dugmence {
+    margin-left: 55px;
+  }
+
+  .txtArea {
+    width: 96px;
+  }
+  .contactfamillydiv {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dugmence {
+    padding-left: 53px;
+  }
+
+  .dadContainer {
+    height: 450px;
+  }
+
+  .aboutContainer {
+    height: 935px;
+  }
+
+  .momtxtp {
+    width: 225px;
+  }
+
+  .txtp {
+    right: 9px;
+    width: 57%;
+    text-align: left;
+  }
+  .txtArea {
+    width: 95px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .momimg {
+    margin-right: -20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dadContainer {
+    height: 487px;
+  }
+  .momimg {
+    margin-right: -30px;
+  }
+  .mommagla {
+    margin-right: -20px;
+  }
+  .aboutContainer {
+    height: 955px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
